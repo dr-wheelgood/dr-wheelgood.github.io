@@ -274,7 +274,7 @@
         function getRandomPenaltyName ( penalty )  {
             if ( penalty.alternateNames != undefined ) {
                 if (Math.random() < 0.5) {
-                    return penalty.fullName + "\n\r" + penalty.alternateNames[Math.floor( Math.random() * penalty.alternateNames.length )];
+                    return penalty.fullName + "\n\r</p>" + penalty.alternateNames[Math.floor( Math.random() * penalty.alternateNames.length )];
                 }
             }
             
