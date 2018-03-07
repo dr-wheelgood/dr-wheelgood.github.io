@@ -138,20 +138,20 @@
                 minor : false 
             }, 
             { 
-                fullName : "Elbows", 
-                code : "E", 
-                major : true, 
-                minor : false 
-            }, 
-            { 
-                fullName : "Forearms", 
+                fullName : "Forearm", 
                 code : "F", 
                 major : true, 
                 minor : false 
             }, 
             { 
-                fullName : "Blocking with the Head", 
+                fullName : "Head Block", 
                 code : "H", 
+                major : true, 
+                minor : false 
+            },
+            { 
+                fullName : "Leg Block", 
+                code : "E", 
                 major : true, 
                 minor : false 
             },
@@ -162,12 +162,14 @@
                 minor : false 
             },
             { 
-                fullName : "Out of Bounds", 
-                code : "O", 
+                fullName : "Illegal Contact", 
                 alternateNames: [
-                    "Out of Bounds Assist",
-                    "Out of Bounds Block"
+                    "Illegal Assist",
+                    "Early Hit",
+                    "Late Hit",
+                    "Out of Play Block",
                 ],
+                code : "C", 
                 major : true, 
                 minor : false
             },
@@ -186,65 +188,61 @@
                 minor : false
             },
             { 
-                fullName : "Direction of Gameplay", 
+                fullName : "Direction", 
                 alternateNames: [
-                    "Clockwise Block", 
-                    "Stopped Block", 
-                    "Clockwise Assist", 
-                    "Stopped Assist"
+                    "Stop Block"
                 ], 
-                code : "C", 
+                code : "D", 
                 major : true, 
                 minor : false
             },
             { 
-                fullName : "Skating Out of Bounds", 
-                code : "S", 
+                fullName : "Cut", 
+                alternateNames: [
+                    "Illegal Re-entry"
+                ], 
+                code : "X", 
                 major : true, 
                 minor : false 
             },
             { 
-                fullName : "Cutting", 
-                code : "X", 
+                fullName : "Illegal Positioning", 
+                alternateNames: [
+                    "Destruction",
+                    "Skating out of Bounds",
+                    "Failure to Reform",
+                    "Failure to Yield",
+                    "Failure to Return"
+                ], 
+                code : "P", 
+                major : true, 
+                minor : false
+            },
+            { 
+                fullName : "Interference", 
+                alternateNames: [
+                    "Delay of Game"
+                ], 
+                code : "N", 
+                major : true, 
+                minor : false
+            },
+            { 
+                fullName : "Misconduct", 
+                alternateNames: [
+                    "Insubordination"
+                ], 
+                code : "G", 
                 major : true, 
                 minor : false 
             },
             { 
                 fullName : "Illegal Procedure", 
                 alternateNames: [
-                    "False Start",
-                    "Too Many Skaters",
-                    "Illegal Call-off",
-                    "Illegal Re-entry",
-                    "Illegal Engaging",
-                    "Penalty Box Violation",
-                    "Uniform Violation",
                     "Star Pass Violation",
-                    "Bench Staff Violation",
-                    "Equipment Violation",
-                    "Interference",
-                    "Stalling",
-                    "Illegal Positioning"
+                    "Pass Inteference"
                 ], 
                 code : "I", 
-                major : true, 
-                minor : false
-            },
-            { 
-                fullName : "Misconduct", 
-                code : "G", 
-                major : true, 
-                minor : false 
-            },
-            { 
-                fullName : "Insubordination", 
-                code : "N", 
-                major : true, 
-                minor : false 
-            },
-            { 
-                fullName : "Delay of Game", 
-                code : "Z", 
                 major : true, 
                 minor : false 
             }
