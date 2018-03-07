@@ -238,6 +238,7 @@
         var maxNumberLength = 4;
         var alphanumericNumbers = false;
         var mainPenaltyNamesOnly = false;
+        var chancetoofferalternatepenalty = .60;
         
         var updateDelay = 15 * 1000;
         
@@ -273,7 +274,7 @@
         
         function getRandomPenaltyName ( penalty )  {
             if ( penalty.alternateNames != undefined ) {
-                if (Math.random() < 0.5) {
+                if (Math.random() < chancetoofferalternatepenalty) {
                     return penalty.fullName + "\n\r</p>" + penalty.alternateNames[Math.floor( Math.random() * penalty.alternateNames.length )];
                 }
             }
